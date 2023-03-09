@@ -1,0 +1,144 @@
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body {
+	padding: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+.photos-cards {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	.photos-card {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+		// h3 {
+		// 	white-space: nowrap;
+		// }
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.post-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
+	.post-card {
+		display: grid;
+		grid-gap: 30px;
+		.post-btn {
+			display: flex;
+			align-items: center;
+		}
+		a {
+			padding: 8px 2px;
+			width: 50%;
+			color: white;
+			background-color: #ae4242;
+			white-space: nowrap;
+			text-align: center;
+			border-radius: 10px;
+			transition: 0.3s;
+			&:hover {
+				background-color: #941313;
+			}
+		}
+	}
+}
+
+.comments-cards {
+	display: grid;
+	grid-gap: 20px;
+	.comments-card {
+		display: grid;
+		grid-gap: 20px;
+	}
+}
+
+.album-card,
+.todos-card,
+.photos-card,
+.post-card,
+.comments-card {
+	padding: 20px 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.todos-cards,
+.album-cards {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.users-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 32px;
+	.user-card {
+		padding: 20px 10px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		.user-name {
+			h2 {
+				font-size: 20px;
+			}
+		}
+		a {
+			color: #e28a8a;
+		}
+		.user-btn {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 10px;
+			.user_btn-todos,
+			.user_btn-post,
+			.user_btn-album,
+			.user_btn-photos {
+				width: 100%;
+				white-space: nowrap;
+				text-align: center;
+				padding: 8px 2px;
+				background: #e28a8a;
+				color: #ffffff;
+				border-radius: 10px;
+				transition: 0.3s;
+			}
+			.user_btn-todos:hover {
+				background: #3a3069;
+			}
+			.user_btn-post:hover {
+				background: #6e4fbd;
+			}
+			.user_btn-album:hover {
+				background: #4e13e3;
+			}
+			.user_btn-photos:hover {
+				background: #3301b3;
+			}
+		}
+		.user-company {
+			h2 {
+				font-size: 20px;
+			}
+			h3 {
+				font-size: 22px;
+			}
+		}
+	}
+}
