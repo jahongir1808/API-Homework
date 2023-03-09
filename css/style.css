@@ -3,6 +3,10 @@ a {
   cursor: pointer;
 }
 
+button, li {
+  cursor: pointer;
+}
+
 body {
   padding: 100px;
   font-family: Arial, Helvetica, sans-serif;
@@ -21,12 +25,15 @@ p {
 .photos-cards {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 }
 .photos-cards .photos-card {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+}
+.photos-cards .photos-card h3 {
+  font-size: 15px;
 }
 .photos-cards .photos-card img {
   width: 100%;
@@ -76,6 +83,10 @@ p {
   padding: 20px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
+}
+
+.pagination {
+  margin-top: 20px;
 }
 
 .todos-cards,
